@@ -1,0 +1,32 @@
+.menu {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu button {
+  background-color: #cdc2ee;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

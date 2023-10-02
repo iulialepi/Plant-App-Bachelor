@@ -1,0 +1,19 @@
+
+
+<div class="journal-entry">
+  <h2>Add New Journal Entry</h2>
+  <form (submit)="onSubmit()">
+    <mat-form-field>
+      <textarea matInput placeholder="Enter your journal text" [(ngModel)]="journalText" name="journalText" required></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Add Entry</button>
+  </form>
+
+  <div class="entries-container">
+    <div class="entry-item" *ngFor="let entry of entries">
+      <div class="entry-date">{{ entry.date | date }}</div>
+      <div class="entry-content">{{ entry.content }}</div>
+    </div>
+  </div>
+</div>

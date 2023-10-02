@@ -1,0 +1,23 @@
+<div class="body">
+  <div class="classify-container">
+    <p>Here you can find all plants! Click "Add plant" to add it in your collection. If you have a plant try using a picture to find it using the button on the right!</p>
+    <button mat-stroked-button type="button" color="basic" class="classify-button" (click)="onClassify()">Try finding your own plant using a picture</button>
+  </div>
+
+  <div class="card-container" *ngFor="let plant of plants">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>{{plant.name}}</mat-card-title>
+        <mat-card-subtitle>Also called: {{plant.commonName}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <img [src]="plant.description" alt="{{ plant.name }}" class="plant-image">
+        <p></p>
+        <p>Usually needs to be watered in {{plant.water}} days</p>
+        <button mat-stroked-button type="button" color="basic" class="add-button" (click)="onAdd(plant)">Add plant</button>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

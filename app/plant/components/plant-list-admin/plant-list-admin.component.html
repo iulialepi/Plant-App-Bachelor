@@ -1,0 +1,31 @@
+<div class="body" >
+  <nav class="menu">
+    <div class="search-container">
+      <input matInput placeholder="Search by name..." #filter class="search-input">
+      <button class="primary search-button" type="button" (click)="onSearch(filter.value)">Search</button>
+    </div>
+  </nav>
+  <div class="card-container" *ngFor="let plant of filteredPlants">
+    <mat-card class="card">
+      <mat-card-header>
+        <div class="card-header-content">
+          <mat-card-title>{{plant.name}}</mat-card-title>
+          <mat-card-subtitle>Also called: {{plant.commonName}}</mat-card-subtitle>
+        </div>
+        <button mat-fab type="button" color="black" class="delete-button" (click)="onEditName(plant)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-fab type="button" color="black" class="delete-button" (click)="onDelete(plant)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-header>
+      <mat-card-content>
+        <img [src]="plant.description" alt="{{ plant.name }}" class="plant-image">
+        <p></p>
+        <p>Usually needs to be watered in {{plant.water}} days</p>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

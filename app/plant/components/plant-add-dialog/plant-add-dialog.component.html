@@ -1,0 +1,15 @@
+<h2 mat-dialog-title>Enter an Alias</h2>
+<div mat-dialog-content>
+  <mat-radio-group [(ngModel)]="isTerracotta">
+    <mat-radio-button value="terracotta">Terracotta</mat-radio-button>
+    <mat-radio-button value="plastic">Plastic</mat-radio-button>
+  </mat-radio-group>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Enter Alias" [(ngModel)]="alias" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onOkClick()">OK</button>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+</div>

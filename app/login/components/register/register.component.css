@@ -1,0 +1,22 @@
+.container {
+  margin: 150px auto;
+  height: 300px;
+  width: 400px;
+  background-color: #cdc2ee;
+  background-color: rgba(205, 194, 238, 0.2);
+  position: relative;
+  top: 100px;
+}
+
+.input {
+  margin: 15px 15%;
+}
+
+.login-button {
+  position: center;
+  margin-left: 80%;
+  margin-right: 30px;
+  top: -20px;
+  right: 30px;
+}
+

@@ -1,0 +1,52 @@
+.card-container {
+  display: inline-block;
+
+}
+
+.card {
+  margin: 20px 0 20px 130px;
+  width: 400px;
+  background-color: rgba(123, 154, 135, 0.84);
+}
+
+.plant-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('../../../../assets/plant-image/backgr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-button {
+  position: relative;
+  width: 370px;
+  height: 30px;
+  background-color: rgba(123, 154, 135, 0.8);
+}
+
+.classify-button {
+  background-color: rgba(123, 154, 135, 0.84);
+  height: 45px;
+  margin-right: 120px;
+}
+
+.classify-container{
+  height: 50px;
+  background-color: rgba(51, 51, 51, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+}

@@ -1,0 +1,71 @@
+.card-container {
+  display: inline-block;
+
+}
+
+.card {
+  margin: 20px 0 20px 130px;
+  width: 400px;
+  background-color: rgba(123, 154, 135, 0.84);
+}
+
+.plant-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Set a maximum height for consistency */
+  object-fit: cover; /* Scale image to cover the entire element */
+}
+
+.card-header-content {
+  flex-grow: 1;
+}
+.delete-button{
+  height: 32px;
+  width: 32px;
+}
+.body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('../../../../assets/plant-image/backgr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-button {
+  position: relative;
+  width: 370px;
+  height: 30px;
+  background-color: rgba(123, 154, 135, 0.8);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(123, 154, 135, 0.8);
+}
+
+.search-input {
+  border: 1px solid rgba(123, 154, 135, 0.8);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(123, 154, 135, 0.8);
+}
+
+.search-button {
+  background-color: rgba(123, 154, 135, 0.8);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #37463d;
+}
+.search-input::placeholder {
+  color: white;
+}
